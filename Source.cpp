@@ -86,7 +86,7 @@ int newEntry(Student * stud, int a) {
 	for (int i = 0; i < 8; i++) {
 		cin >> student.grades[i];
 		while (student.grades[i] < 2 || student.grades[i] > 5) {
-			cout << '\n' << "Введено неправильное число, повторите ввод:\n";
+			cout << '\n' << "Введено неправильное число, повторите ввод с неправильной оценки:\n";
 			cin >> student.grades[i];
 		}
 		if (student.grades[i] == 2) {
@@ -239,7 +239,7 @@ int reversStud(Student* stud, int a) {
 				for (int i = 0; i < 8; i++) {
 					cin >> student.grades[i];
 					while (student.grades[i] < 2 || student.grades[i] > 5) {
-						cout << '\n' << "Введено неправильное число, повторите ввод:\n";
+						cout << '\n' << "Введено неправильное число, повторите ввод с неправильной оценки:\n";
 						cin >> student.grades[i];
 					}
 				}
